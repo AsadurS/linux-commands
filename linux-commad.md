@@ -34,9 +34,18 @@
   - cat file_name
   - cat file1.txt file2.txt(concat multiple file)
   - cat -n test.txt show with line number
-## copy file 
+## copy file file folder
   - cp path/to/file_name path/from/
   - cp path/to/file_name path/from/ file _name alos remange file name 
   - scp -P 2222 path/zaman.jpg muhammad@192.168.56.1:/home/muhammad/Documents/ ( local to vps)
   - scp -r -P 2222 C:/Users/SAMSUNG/Downloads/local muhammad@192.168.56.1:/home/muhammad/Documents/ (local to vps folder)
   - scp -r -P 2222 muhammad@192.168.56.1:/home/muhammad/Documents/ C:/Users/SAMSUNG/Downloads/local (vps to local )
+## move file folder
+  -mv source_file /path/to/des(move)
+  - mv old_name new_name (rename file)
+  - mv new_folder/ ~/Downloads/ (move folder)
+## Zip a unzip
+  - zip <zip_file_name.zip> file_folder_wich_want_to_zip
+  - zip all file_one  folder (zip file and folder together)
+  - zip -r archive.zip directory/ -x "*.ts" "*.tmp"(Create a zip archive, excluding specific files)
+  - unzip archive.zip -d /path/to/destination/ (unzip to destination)
