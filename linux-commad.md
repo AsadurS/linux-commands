@@ -35,6 +35,6 @@
   - cat file1.txt file2.txt(concat multiple file)
   - cat -n test.txt show with line number
 ## copy file 
-  -cp path/to/file_name path/from/
-  -cp path/to/file_name path/from/ file _name alos remange file name 
+  - cp path/to/file_name path/from/
+  - cp path/to/file_name path/from/ file _name alos remange file name 
   - scp -P 2222 zaman.jpg muhammad@192.168.56.1:/home/muhammad/Documents/ (vps to local)
