@@ -38,3 +38,5 @@
   - cp path/to/file_name path/from/
   - cp path/to/file_name path/from/ file _name alos remange file name 
   - scp -P 2222 path/zaman.jpg muhammad@192.168.56.1:/home/muhammad/Documents/ ( local to vps)
+  - scp -r -P 2222 C:/Users/SAMSUNG/Downloads/local muhammad@192.168.56.1:/home/muhammad/Documents/ (local to vps folder)
+  - scp -r -P 2222 muhammad@192.168.56.1:/home/muhammad/Documents/ C:/Users/SAMSUNG/Downloads/local (vps to local )
