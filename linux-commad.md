@@ -49,3 +49,8 @@
   - zip all file_one  folder (zip file and folder together)
   - zip -r archive.zip directory/ -x "*.ts" "*.tmp"(Create a zip archive, excluding specific files)
   - unzip archive.zip -d /path/to/destination/ (unzip to destination)
+## create user 
+  -su (switch user) sudo su  mean change user to root
+  -sudo adduser username(create user)
+  - sudo userdel username(delete user)
+  - sudo pkill -KILL -u <username> (if user is login u can logout using this command)
