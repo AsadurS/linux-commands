@@ -50,7 +50,24 @@
   - zip -r archive.zip directory/ -x "*.ts" "*.tmp"(Create a zip archive, excluding specific files)
   - unzip archive.zip -d /path/to/destination/ (unzip to destination)
 ## create user 
-  -su (switch user) sudo su  mean change user to root
-  -sudo adduser username(create user)
-  - sudo userdel username(delete user)
-  - sudo pkill -KILL -u <username> (if user is login u can logout using this command)
+   - su (switch user) sudo su  mean change user to root
+   - sudo adduser username(create user)
+   - adduser -g <group_name> -s /bin/bash(for bash sell) -c "command or desciprtion " -m (create home directory or not) -d /home/dir_name <username>
+   - sudo userdel username(delete user)
+   - sudo userdel -r username(delete user with home directory)
+   - sudo userdel -f username(delete user if user logind)
+   - sudo pkill -KILL -u <username> (if user is login u can logout using this command)
+   - cat /etc/passwd (show users)
+## Group 
+  - sudo groupadd <group_name>
+  - sudo groupdel <user name>
+  - cat /etc/group (show groups)
+## usermod
+  - usermod -aG <group_name> <user_name> (remove previous group add new group)
+  - usermod -g <group_name> <user_name> (remove previous group add new group)
+  - usermod -G <group_name> <user_name> (add user group with previous group)
+  - sudo usermod -m -d /new/home/directory username (Change the user's home directory with all data)
+  -  sudo usermod -l newusername oldusername (Change the user's login name)
+  -  sudo usermod -G group1,group2 username (Add the user to additional groups)
+  -  sudo usermod -L username (Lock a user account)
+  -  sudo usermod -U username (Unlock a previously locked user account)
