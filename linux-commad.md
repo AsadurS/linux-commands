@@ -71,3 +71,8 @@
   -  sudo usermod -G group1,group2 username (Add the user to additional groups)
   -  sudo usermod -L username (Lock a user account)
   -  sudo usermod -U username (Unlock a previously locked user account)
+## permission 
+  - sudo chown <username>:<username> <folder_path>
+      -This should be replaced with the actual username of the user you want to set as the owner of the folder. This user will have specific rights and permissions to access and modify the contents of the folder.
+      -This is used to specify the group that will own the folder. By default, Ubuntu creates a primary group with the same name as the user. This ensures that the user has their own group, which is common practice for security reasons.
+  - sudo chmod <permissions>=u+rwx <folder_path>
